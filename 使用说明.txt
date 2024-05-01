@@ -3,4 +3,4 @@ windows用户:
 linux与mac用户:
 python3 DouYinCommand.py -h
 
-python3 DouYinCommand.py
+python3 DouYinCommand.py --mode post
