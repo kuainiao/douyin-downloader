@@ -12,13 +12,13 @@
 # 可以设置多个链接, 确保至少一个链接
 # 必选
 link:
-  -  https://v.douyin.com/kVefc81/
-  -  https://v.douyin.com/kVdkdxY/
-  -  https://v.douyin.com/kVdMcrr/
-  -  https://v.douyin.com/iRGu2mBL/
-  -  https://v.douyin.com/iRGukBBk/
-  -  https://v.douyin.com/iRGuJcW8/
-  -  https://v.douyin.com/iRGHQY5t/
+#  -  https://v.douyin.com/kVefc81/
+#  -  https://v.douyin.com/kVdkdxY/
+#  -  https://v.douyin.com/kVdMcrr/
+#  -  https://v.douyin.com/iRGu2mBL/
+#  -  https://v.douyin.com/iRGukBBk/
+#  -  https://v.douyin.com/iRGuJcW8/
+  -  https://v.douyin.com/i2Fe8SRU/
 
 
 # 下载保存位置, 默认当前文件位置
@@ -27,19 +27,19 @@ path: ./Downloaded/
 
 # 是否下载视频中的音乐(True/False), 默认为True
 # 可选
-music: True
+music: False
 
 # 是否下载视频的封面(True/False), 默认为True, 当下载视频时有效
 # 可选
-cover: True
+cover: False
 
 # 是否下载作者的头像(True/False), 默认为True
 # 可选
-avatar: True
+avatar: False
 
 # 是否保存获取到的数据(True/False), 默认为True
 # 可选
-json: True
+json: False
 
 folderstyle: True # True -> 每个视频是一个单独的文件夹; False -> 所有视频共用一个文件夹
 # True

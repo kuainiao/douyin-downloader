@@ -1,0 +1,6 @@
+windows用户:
+.\DouYinCommand.exe -h
+linux与mac用户:
+python3 DouYinCommand.py -h
+
+python3 DouYinCommand.py
