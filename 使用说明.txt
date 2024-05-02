@@ -5,3 +5,4 @@ python3 DouYinCommand.py -h
 
 python3 DouYinCommand.py --mode post
 python3 DouYinCommand.py -C True -l https://v.douyin.com/i2Fe8SRU/
+python3 DouYinCommand.py -C True -l https://v.douyin.com/i2FYhkHJ/

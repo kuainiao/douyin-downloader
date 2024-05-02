@@ -291,19 +291,19 @@ def main():
                 print("--------------------------------------------------------------------------------")
                 print("[  提示  ]:正在请求用户主页模式: " + mode + "\r\n")
                 if mode == 'post' or mode == 'like':
-                    datalist = dy.getUserInfo(key, mode, 35, configModel["number"][mode], configModel["increase"][mode])
+                    datalist = dy.getUserInfo(key, mode, 350, configModel["number"][mode], configModel["increase"][mode])
                     if datalist is not None and datalist != []:
                         modePath = os.path.join(userPath, mode)
                         if not os.path.exists(modePath):
                             os.mkdir(modePath)
                         dl.userDownload(awemeList=datalist, savePath=modePath)
                 elif mode == 'mix':
-                    mixIdNameDict = dy.getUserAllMixInfo(key, 35, configModel["number"]["allmix"])
+                    mixIdNameDict = dy.getUserAllMixInfo(key, 350, configModel["number"]["allmix"])
                     if mixIdNameDict is not None and mixIdNameDict != {}:
                         for mix_id in mixIdNameDict:
                             print(f'[  提示  ]:正在下载合集 [{mixIdNameDict[mix_id]}] 中的作品\r\n')
                             mix_file_name = utils.replaceStr(mixIdNameDict[mix_id])
-                            datalist = dy.getMixInfo(mix_id, 35, 0, configModel["increase"]["allmix"], key)
+                            datalist = dy.getMixInfo(mix_id, 350, 0, configModel["increase"]["allmix"], key)
                             if datalist is not None and datalist != []:
                                 modePath = os.path.join(userPath, mode)
                                 if not os.path.exists(modePath):
@@ -312,7 +312,7 @@ def main():
                                 print(f'[  提示  ]:合集 [{mixIdNameDict[mix_id]}] 中的作品下载完成\r\n')
         elif key_type == "mix":
             print("[  提示  ]:正在请求单个合集下作品\r\n")
-            datalist = dy.getMixInfo(key, 35, configModel["number"]["mix"], configModel["increase"]["mix"], "")
+            datalist = dy.getMixInfo(key, 350, configModel["number"]["mix"], configModel["increase"]["mix"], "")
             if datalist is not None and datalist != []:
                 mixname = utils.replaceStr(datalist[0]["mix_info"]["mix_name"])
                 mixPath = os.path.join(configModel["path"], "mix_" + mixname + "_" + key)
@@ -321,7 +321,7 @@ def main():
                 dl.userDownload(awemeList=datalist, savePath=mixPath)
         elif key_type == "music":
             print("[  提示  ]:正在请求音乐(原声)下作品\r\n")
-            datalist = dy.getMusicInfo(key, 35, configModel["number"]["music"], configModel["increase"]["music"])
+            datalist = dy.getMusicInfo(key, 350, configModel["number"]["music"], configModel["increase"]["music"])
 
             if datalist is not None and datalist != []:
                 musicname = utils.replaceStr(datalist[0]["music"]["title"])

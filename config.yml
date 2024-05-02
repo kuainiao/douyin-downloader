@@ -18,7 +18,8 @@ link:
 #  -  https://v.douyin.com/iRGu2mBL/
 #  -  https://v.douyin.com/iRGukBBk/
 #  -  https://v.douyin.com/iRGuJcW8/
-  -  https://v.douyin.com/i2Fe8SRU/
+#  -  https://v.douyin.com/i2Fe8SRU/
+  - https://v.douyin.com/i2FYhkHJ/
 
 
 # 下载保存位置, 默认当前文件位置
@@ -66,11 +67,11 @@ mode:
 # 下载作品个数设置
 # 可选
 number:
-  post: 0     # 主页下作品下载个数设置, 默认为0 全部下载
-  like: 0     # 主页下喜欢下载个数设置, 默认为0 全部下载
-  allmix: 0   # 主页下合集下载个数设置, 默认为0 全部下载
-  mix: 0      # 单个合集下作品下载个数设置, 默认为0 全部下载
-  music: 0    # 音乐(原声)下作品下载个数设置, 默认为0 全部下载
+  post: 500     # 主页下作品下载个数设置, 默认为0 全部下载
+#  like: 0     # 主页下喜欢下载个数设置, 默认为0 全部下载
+#  allmix: 0   # 主页下合集下载个数设置, 默认为0 全部下载
+#  mix: 0      # 单个合集下作品下载个数设置, 默认为0 全部下载
+#  music: 0    # 音乐(原声)下作品下载个数设置, 默认为0 全部下载
 
 database: True # 如果不使用数据库, 增量更新将不可用
 
@@ -98,17 +99,17 @@ thread: 5
 # cookies 和 cookie 二选一, 要使用这种形式, 请注释下面的cookie
 # 目前只需要msToken、ttwid、odin_tt、passport_csrf_token、sid_guard
 # 可以动态添加, 程序会根据填的键查找，并没有写死, 如果抖音需要更多的cookie自己加上就行了
-cookies:
-  # msToken: xxx
-  # ttwid: xxx
-  # odin_tt: xxx
-  # passport_csrf_token: xxx
-  # sid_guard: xxx
-  msToken: V2Z81awjFqi9-xY2nF9Nzt5pAx8cIJ_NyEgaASXpiLTQp3RoNL9aNajtz3TR9PGGYr5HIfDn7xN6xcIG3ry0qL6Dz4OoOJXLOapbPwo6g_6_wayun026cgrnsNyh_lY=
-  ttwid: 1%7CuvVSCs3TrpXCLYPdGOm9kOZi2KfPl3aQMokwAT4p2gw%7C1668686667%7C407e79f41c1d3c7beda53f6535064dc5a07eee68d9a372c4ab360f4bfa0b838b
-  odin_tt: 6f8f0b66fda782f9950e77dbf9aef97aaba0ae6f8b569a9b015a97c16630db81138ce3cc0d9e9a751b76c4a841241ae6
-  passport_csrf_token: 99d9b8c4945dac0fd2998b5b56de6929
-  sid_guard: 66d7a2432d3b509a108656d2dc4a4ed5%7C1685000706%7C5183999%7CMon%2C+24-Jul-2023+07%3A45%3A05+GMT
+#cookies:
+#  # msToken: xxx
+#  # ttwid: xxx
+#  # odin_tt: xxx
+#  # passport_csrf_token: xxx
+#  # sid_guard: xxx
+#  msToken: V2Z81awjFqi9-xY2nF9Nzt5pAx8cIJ_NyEgaASXpiLTQp3RoNL9aNajtz3TR9PGGYr5HIfDn7xN6xcIG3ry0qL6Dz4OoOJXLOapbPwo6g_6_wayun026cgrnsNyh_lY=
+#  ttwid: 1%7CuvVSCs3TrpXCLYPdGOm9kOZi2KfPl3aQMokwAT4p2gw%7C1668686667%7C407e79f41c1d3c7beda53f6535064dc5a07eee68d9a372c4ab360f4bfa0b838b
+#  odin_tt: 6f8f0b66fda782f9950e77dbf9aef97aaba0ae6f8b569a9b015a97c16630db81138ce3cc0d9e9a751b76c4a841241ae6
+#  passport_csrf_token: 99d9b8c4945dac0fd2998b5b56de6929
+#  sid_guard: 66d7a2432d3b509a108656d2dc4a4ed5%7C1685000706%7C5183999%7CMon%2C+24-Jul-2023+07%3A45%3A05+GMT
 
 # cookie 请登录网页抖音后F12查看
 # cookies 和 cookie 二选一, 要使用这种形式, 请注释上面的cookies及包含的所有键值对
@@ -116,4 +117,5 @@ cookies:
 # 格式: "name1=value1; name2=value2;" 注意要加冒号
 # 冒号中的内容包括不限于以下键值对, 如果抖音需要更多的cookie自己加上就行了
 #cookie: "msToken=xxx; ttwid=xxx; odin_tt=xxx; passport_csrf_token=xxx; sid_guard=xxx;"
+cookie: "store-region=cn-gd; store-region-src=uid; my_rd=2; bd_ticket_guard_client_web_domain=2; LOGIN_STATUS=1; d_ticket=d346170ec5cca2ada5ab7702bd627e1f35350; __live_version__=%221.1.1.7950%22; live_use_vvc=%22false%22; xgplayer_user_id=42469244377; passport_assist_user=CkEaMgmnjDHgxvECeD2wJHIQFc3gYrsX7KM2yJrTsDM8x5it3LaqPcb-tqvsGWOggEw_IR9BdioHnMp8JSd8klMrXRpKCjx5VbKMk9sBjaLX-sXWg8Vz43VAB9rZlw1IOrYmIddNb0fHveVT_bm57j4rx0GTI2xWhVbvTOEsn0If7R4Qo_HIDRiJr9ZUIAEiAQNMj4ZA; n_mh=zG6KCCQx__qoDDNLmyT2pgqaS2SY4tn-mUKKHyz25C4; sso_uid_tt=463002d152e002c6d9dee4609cbc055c; sso_uid_tt_ss=463002d152e002c6d9dee4609cbc055c; toutiao_sso_user=d58ab0dfa0b780b23a7ad699a5d43ae0; toutiao_sso_user_ss=d58ab0dfa0b780b23a7ad699a5d43ae0; ttwid=1%7CNnzvgjISPXm7JU6tHEfB4xiHgwYqg3aJ9q1J2PjCJxQ%7C1707449143%7C900135467a3ecb31c7dbfb2e7c4423c089b2a229878c8208990ad9fae52736aa; sid_ucp_v1=1.0.0-KDg2NmE0ZGZiN2RhOTZlNjAxMzc4NzcwYjY0MzJhMWJkZTY1N2IyZTAKGwjTgoC0sfXMBhCXnpavBhjvMSAMOAZA9AdIBBoCbHEiIGVkMjk3YTBmYzlmYjgxMzRmZDEyN2M3YzNmMjg1YTRj; ssid_ucp_v1=1.0.0-KDg2NmE0ZGZiN2RhOTZlNjAxMzc4NzcwYjY0MzJhMWJkZTY1N2IyZTAKGwjTgoC0sfXMBhCXnpavBhjvMSAMOAZA9AdIBBoCbHEiIGVkMjk3YTBmYzlmYjgxMzRmZDEyN2M3YzNmMjg1YTRj; passport_csrf_token=38cb18c88cb5ea9b87165a74160e069c; passport_csrf_token_default=38cb18c88cb5ea9b87165a74160e069c; douyin.com; device_web_cpu_core=8; device_web_memory_size=8; dy_swidth=1440; dy_sheight=900; csrf_session_id=ddbd1e70919bbeeea46e7df7edff0f77; volume_info=%7B%22isUserMute%22%3Afalse%2C%22isMute%22%3Atrue%2C%22volume%22%3A0.085%7D; sid_ucp_sso_v1=1.0.0-KGVjNzZjNDhkNGZkMTU4MDIzODMzZGE5YThkMTgzZTZmNWE1NWM3MDgKHwjTgoC0sfXMBhDMscmxBhjvMSAMMKDSxeUFOAZA9AcaAmxmIiBkNThhYjBkZmEwYjc4MGIyM2E3YWQ2OTlhNWQ0M2FlMA; ssid_ucp_sso_v1=1.0.0-KGVjNzZjNDhkNGZkMTU4MDIzODMzZGE5YThkMTgzZTZmNWE1NWM3MDgKHwjTgoC0sfXMBhDMscmxBhjvMSAMMKDSxeUFOAZA9AcaAmxmIiBkNThhYjBkZmEwYjc4MGIyM2E3YWQ2OTlhNWQ0M2FlMA; sid_guard=d58ab0dfa0b780b23a7ad699a5d43ae0%7C1714575565%7C5184000%7CSun%2C+30-Jun-2024+14%3A59%3A25+GMT; uid_tt=463002d152e002c6d9dee4609cbc055c; uid_tt_ss=463002d152e002c6d9dee4609cbc055c; sid_tt=d58ab0dfa0b780b23a7ad699a5d43ae0; sessionid=d58ab0dfa0b780b23a7ad699a5d43ae0; sessionid_ss=d58ab0dfa0b780b23a7ad699a5d43ae0; SEARCH_RESULT_LIST_TYPE=%22single%22; download_guide=%220%2F%2F1%22; WallpaperGuide=%7B%22showTime%22%3A1714575588193%2C%22closeTime%22%3A0%2C%22showCount%22%3A1%2C%22cursor1%22%3A7%2C%22cursor2%22%3A0%7D; pwa2=%220%7C0%7C1%7C0%22; publish_badge_show_info=%221%2C0%2C0%2C1714575578227%22; xg_device_score=7.658235294117647; stream_player_status_params=%22%7B%5C%22is_auto_play%5C%22%3A0%2C%5C%22is_full_screen%5C%22%3A0%2C%5C%22is_full_webscreen%5C%22%3A0%2C%5C%22is_mute%5C%22%3A1%2C%5C%22is_speed%5C%22%3A1%2C%5C%22is_visible%5C%22%3A0%7D%22; s_v_web_id=verify_lvo2e75p_1ac937c1_42ab_405e_15cc_e38306e7108d; strategyABtestKey=%221714582918.645%22; __ac_signature=_02B4Z6wo00f01TR5xIwAAIDCZobkljHx3Ak0WcAAACsw6gVtBu2c7dcSCodB9QNBZmPCyizt62pwkgGFB2hgt1AMeJzM5oL73WoexGIGbow84mQ2jEJLaSzvyEmd0UoRiVbiSb5acG.3.AQPc2; FOLLOW_LIVE_POINT_INFO=%22MS4wLjABAAAA-hy2trqp8a9UZEyvZgtbQf64htVfmOMBf7_tSzXV1_Sk452Z1Ko7x-l2hda-D5c4%2F1714665600000%2F0%2F0%2F1714621293203%22; FOLLOW_NUMBER_YELLOW_POINT_INFO=%22MS4wLjABAAAA-hy2trqp8a9UZEyvZgtbQf64htVfmOMBf7_tSzXV1_Sk452Z1Ko7x-l2hda-D5c4%2F1714665600000%2F0%2F1714620693204%2F0%22; bd_ticket_guard_client_data=eyJiZC10aWNrZXQtZ3VhcmQtdmVyc2lvbiI6MiwiYmQtdGlja2V0LWd1YXJkLWl0ZXJhdGlvbi12ZXJzaW9uIjoxLCJiZC10aWNrZXQtZ3VhcmQtcmVlLXB1YmxpYy1rZXkiOiJCRmQvRmNZbXR5ZWN2NXJOWGRDWEpGRUhrbUlTS0lPL0FsdnZoWTV2QVdsZ3luelprVFVlYXFrOEY5ejN1eWphSFRZOTBab1FvVTgrVDRqd3A0YjV3eVU9IiwiYmQtdGlja2V0LWd1YXJkLXdlYi12ZXJzaW9uIjoxfQ%3D%3D; odin_tt=916a881fe7d99f1dbf296cd858aa6273e940c96582414d73fb7f679c5f7e2a5aba604388e60c9639da293b966e197deebcc32d9b364e947a48e50195bd6e2189; __ac_nonce=066333efa007f6e16d0; msToken=t3d08L-r7HMHCXtlKJs72qFxkO6LtaZhU2Ug-c_8ItnB5XP5JuJfHeXAU9OJH8pBX4oSxUOWGakglC-kUCQVC5uyRsB9U_PoPqSpWR1UvkzUnnZneTXfXA==; passport_fe_beating_status=false; IsDouyinActive=true; home_can_add_dy_2_desktop=%220%22; stream_recommend_feed_params=%22%7B%5C%22cookie_enabled%5C%22%3Atrue%2C%5C%22screen_width%5C%22%3A1440%2C%5C%22screen_height%5C%22%3A900%2C%5C%22browser_online%5C%22%3Atrue%2C%5C%22cpu_core_num%5C%22%3A8%2C%5C%22device_memory%5C%22%3A8%2C%5C%22downlink%5C%22%3A6.75%2C%5C%22effective_type%5C%22%3A%5C%224g%5C%22%2C%5C%22round_trip_time%5C%22%3A50%7D%22"
 
