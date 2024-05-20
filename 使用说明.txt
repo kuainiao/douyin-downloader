@@ -3,6 +3,10 @@ windows用户:
 linux与mac用户:
 python3 DouYinCommand.py -h
 
+在config.yml文件添加主页
+执行
 python3 DouYinCommand.py --mode post
+
 python3 DouYinCommand.py -C True -l https://v.douyin.com/i2Fe8SRU/
 python3 DouYinCommand.py -C True -l https://v.douyin.com/i2FYhkHJ/
+python3 DouYinCommand.py -C True -l https://v.douyin.com/i2XUxWpQ/
